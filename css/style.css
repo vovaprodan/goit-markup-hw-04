@@ -370,10 +370,11 @@ margin-right: 24px;
 
     fill: var(--icon-bg-color)
 }
-.icon:hover,
+
+/* .icon:hover,
 .icon:focus {
-    fill:var(--hover-active-color);
-}
+    fill:var(--hover-active-color); */
+
 /* підвал */
 .footer {
 
