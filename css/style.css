@@ -9,6 +9,7 @@
    --hover-active-color:#404BBF;
    --hover-card-color:#F4F4FD;
    --social-bg-color:#31D0AA;
+   --icon-bg-color:#8E8F99;
 }
 body {
     font-family: "Roboto", sans-serif;
@@ -163,14 +164,17 @@ color: var(--hover-active-color);
 .button {
     padding: 16px 32px;
     border-radius: 4px;
+    border: 0;
 
     font-family: inherit;
     cursor: pointer;
     background-color: var(--brend-color);
     color: var(--white-color);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
 .button:hover,
 .button:focus {
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     background-color: var(--hover-active-color);
 }
 /* наши переваги */
@@ -317,6 +321,9 @@ margin-right: 24px;
     border-radius: 50%;
     background-color: var(--brend-color);
 }
+.list-icon>.item:hover {
+    background-color: var(--hover-active-color);
+}
 
 .list-icon>.item:last-child {
     margin-right: 0;
@@ -340,6 +347,12 @@ margin-right: 24px;
     border-radius: 3px;
 }
 
+ /* .list-customers>.item:hover,
+.list-customers>.item:focus {
+    border-color: var(--hover-active-color);
+} */
+
+
 .list-customers>.item:last-child {
     margin-right: 0;
 }
@@ -353,8 +366,13 @@ margin-right: 24px;
 .icon {
     width: 104px;
     height: 56px;
-}
 
+    fill: var(--icon-bg-color)
+}
+.icon:hover,
+.icon:focus {
+    fill:var(--hover-active-color);
+}
 /* підвал */
 .footer {
 
@@ -455,7 +473,7 @@ padding: 8px;
 .porfolio-button {
     padding: 12px 24px;
     border-radius: 4px;
-    border: 0;
+    border: 1px solid var(--footer-text-color);
 
     font-family: inherit;
     cursor: pointer;
@@ -468,6 +486,8 @@ padding: 8px;
 
 .porfolio-button:hover,
 .porfolio-button:focus {
+    border-color: transparent;
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
     color: var(--white-color);
     background-color: var(--hover-active-color);
 }
@@ -495,7 +515,14 @@ padding: 8px;
     margin-bottom: 48px;
     margin-right: 24px;
     width: 360px;
+
+    
 }
+.portfolio-list:hover,
+.portfolio-list:focus {
+box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+}
+
 .portfolio-list:nth-child(3n + 3){
     margin-right: 0;
 }
