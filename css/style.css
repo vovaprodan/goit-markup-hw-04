@@ -349,43 +349,40 @@ margin-right: 24px;
     display: flex;
 }
 .list-customers>.item {
-    width: 168px;
-    height: 88px;
-    border: 1px solid #8E8F99;
     margin-right: 24px;
-    border-radius: 3px;
 }
-
- /* .list-customers>.item:hover,
-.list-customers>.item:focus {
-    border-color: var(--hover-active-color);
-} */
-
-
 .list-customers>.item:last-child {
     margin-right: 0;
 }
 
 
 .link-customers {
+    color: var(--icon-bg-color);
+    border: 1px solid var(--icon-bg-color);
+    border-radius: 4px;
     display: flex;
     padding: 16px 32px;
     
 }
+.link-customers:hover,
+.link-customers:focus {
+    color: var(--hover-active-color);
+    border-color: var(--hover-active-color);
+}
+
 .icon {
     width: 104px;
     height: 56px;
-
-    fill: var(--icon-bg-color)
+    fill: currentColor;
+    /* fill: var(--icon-bg-color) */
 }
-
 /* .icon:hover,
 .icon:focus {
-    fill:var(--hover-active-color); */
+    fill: var(--hover-active-color);
+} */
 
 /* підвал */
 .footer {
-
 
     background-color: var(--primery-bg-color);
 }
